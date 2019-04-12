@@ -1,0 +1,5 @@
+---
+applications:
+- name: ArtsTwillioSMSBot
+  host: ArtsTwillioSMSBot
+  memory: 256M

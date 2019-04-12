@@ -1,0 +1,19 @@
+{
+	"name": "NodejsStarterApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"cfenv": "^1.2.2",
+		"express": "^4.16.4",
+		"twilio": "^3.30.0",
+		"watson-developer-cloud": "^3.18.4"
+	},
+	"repository": {},
+	"engines": {
+		"node": "6.x"
+	}
+}
