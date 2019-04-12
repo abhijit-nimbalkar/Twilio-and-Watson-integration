@@ -17,9 +17,9 @@ const bodyParser = require('body-parser');
 const AssistantV1 = require('watson-developer-cloud/assistant/v1');
 
 const assistant = new AssistantV1({
-  iam_apikey: 'APt-AdfNPr_aaEvFlvkbJiDvwnKTlao8JCDCocwLeHQG',
+  iam_apikey: {api_key},
   version: '2019-02-28',
-  url: 'https://gateway.watsonplatform.net/assistant/api'
+  url: {url}
 });
 
 var userContext=null;
@@ -34,7 +34,7 @@ app.post('/sms', (req, res) => {
 	
 	assistant.message(
 	{
-		workspace_id: '9d9902f9-43bd-462f-9c70-78204d78aa98',
+		workspace_id: {workspace_ID},
 		input: {'text': textmsg},
 		context: userContext 
 	},  
